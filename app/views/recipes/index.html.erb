@@ -7,7 +7,7 @@
             <section class="center">img</section>
         </div>
         <div class="col-md-8 well">
-            <h4><%= recipe.name %></h4>
+            <h4><%= link_to recipe.name, recipe_path(recipe) %></h4>
             <p><%= truncate(recipe.description, length:150) %></p>
             <p>
                 <span class="quiet">Created

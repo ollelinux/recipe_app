@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   
   #resources :recepies
   get '/recipes', to: 'recipes#index'
+  get '/recipes/:id', to: 'recipes#show', as: 'recipe'
 end
