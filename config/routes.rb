@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'pages/home', to: 'pages#home'
   
+  #resources :recepies
+  get '/recipes', to: 'recipes#index'
 end

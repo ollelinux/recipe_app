@@ -1,0 +1,24 @@
+HTTP Verb	Path	            Controller#Action	Used for
+GET	        /photos	            photos#index	    display a list of all photos
+GET	        /photos/new	        photos#new	        return an HTML form for creating a new photo
+POST	    /photos	            photos#create	    create a new photo
+GET	        /photos/:id	        photos#show	        display a specific photo
+GET	        /photos/:id/edit	photos#edit	        return an HTML form for editing a photo
+PATCH/PUT	/photos/:id	        photos#update	    update a specific photo
+DELETE	    /photos/:id	        photos#destroy	    delete a specific photo
+
+
+== to remember ==
+
+Prefix      Verb        URI Pattern         Controller#Action   Used for
+recipes     GET         /recipes            recipes#index
+new_recipe  GET         /recipes/new        recipes#new         # displays a form
+            POST        /recipes            recipes#create      # submit the info from the form
+            
+edit_recipe GET         /recipes/:id/edit   recipes#edit        # display an edit form
+            PATCH       /recipes/:id        recipes#update      # submit the edited form information
+
+recipe      GET         /recipes/:id        recipes#show        # display a particular recipe
+            DELETE      /recipes/:id        recipes#destroy     # deletes a particular recipe
+
+-----------------------------------------------------------
