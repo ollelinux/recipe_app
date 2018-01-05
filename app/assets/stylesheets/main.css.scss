@@ -1,3 +1,76 @@
+$navbar-default-bg: #2e4a31;
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+// for navigation menu
+// body {
+//     padding-top: 50px;
+//     padding-bottom: 20px;
+// }
+
+#logo {
+    float: left;
+    font-size: 1.7em;
+    color: #fefefe;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+#logo:hover {
+    text-decoration: none;
+}
+
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus{
+    color: #e6d299;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a {
+    color: #c7c7c2;
+}
+
+body, .form-control, .navbar > .btn-default, .open > .dropdown-menu {
+    background-color: #e4e4dd;
+}
+
+.dropdown-menu .divider {
+    background-color: #b1b1ac;
+}
+
+.center {
+    text-align: center;
+}
+
+// Photo by Anastasia Zhenina on Unsplash - cover_image1
+// Photo by Katie Smith on Unsplash - cover_image
+.jumbotron {
+    background-image: asset-url('cover_image.jpg');
+    background-size: cover;
+    height: 320px;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-position: center; 
+}
+
+.jumbotron h1, .jumbotron h2 {
+    color: #fefefe;
+    text-shadow: 1px 1px 1px #4a6236;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+
+.jumbotron h1 {
+    margin-top: -3px;
+}
+
+.btn-main, .btn-main:hover {
+    background-color: #e4b13c;
+}
