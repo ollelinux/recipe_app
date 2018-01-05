@@ -10,6 +10,13 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+// require rails-ujs
+// require turbolinks
+//     require_tree means get all js files from the current folder and use them
+// require_tree .
+
+// https://github.com/twbs/bootstrap-sass
+// bootstrap-sprockets and bootstrap should not both be included in application.js
 //= require rails-ujs
-//= require turbolinks
-//= require_tree .
+//= require jquery
+//= require bootstrap-sprockets
