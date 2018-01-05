@@ -23,7 +23,11 @@
   <body>
     <!--%= render 'layouts/navigation' %-->
     <%= render 'layouts/top_menu' %>
-    <div class='container'><%= yield %></div>
+    <div class='container'>
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+    </div>
+    
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>
