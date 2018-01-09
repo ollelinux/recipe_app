@@ -75,6 +75,16 @@ body, .form-control, .navbar > .btn-default, .open > .dropdown-menu {
     background-color: #e4b13c;
 }
 
+.btn-submit {
+    background-color: #2f4931;
+    color: #c7c7c2;
+}
+
+.btn-submit:hover {
+    background-color: #213623;
+    color: #e6d299;
+}
+
 hr {
     //border-color: #e6d299;
     border-color: #a58f70;

@@ -1,10 +1,10 @@
-<h1 align="center">Listing all Recipes</h1>
-<hr />
-
+<%= render 'shared/page_title', title: 'list of recipes' %>
 <% @recipes.each do |recipe| %>
     <div class="row">
         <div class="col-md-2">
-            <section class="center">img</section>
+            <section class="center chef-info">
+                <%= gravatar_for(recipe.chef, size: 120) %>
+            </section>
         </div>
         <div class="col-md-8 well">
             <h4><%= link_to recipe.name, recipe_path(recipe) %></h4>
