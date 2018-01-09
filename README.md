@@ -1,24 +1,20 @@
-# README
+# Recipe Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is being developed during studying ruby on rails. Later, I 
+suppose, it still be there for a while until it'll switch to a blog.
+(The course is https://www.udemy.com/pro-ruby-on-rails-rails5/learn/v4/overview)
 
-Things you may want to cover:
+Requirements:
 
-* Ruby version
+* Ruby version 2.3.4
 
-* System dependencies
+* Rails 5.1.4
 
-* Configuration
+* System dependencies - read the Gemfile
 
-* Database creation
+* Database (sqlite for development and postgresql for production)
 
-* Database initialization
+* All methods are covered with tests and they can be run using cli command
+$ rails test
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
