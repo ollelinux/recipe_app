@@ -3,7 +3,8 @@ require 'test_helper'
 class ChefTest < ActiveSupport::TestCase
     # this method runs before every other test
     def setup
-        @chef = Chef.new(name: 'chefname', email: 'chefname@mail.com')
+        @chef = Chef.new(name: 'chefname', email: 'chefname@mail.com',
+        password: 'password', password_confirmation: 'password')
     end
     
     # http://guides.rubyonrails.org/association_basics.html
@@ -60,5 +61,14 @@ class ChefTest < ActiveSupport::TestCase
         @chef.save
         assert_equal mixed_email.downcase, @chef.reload.email
     end
-    
+   
+   test 'password should be present' do
+       @chef.password = @chef.password_confirmation = ' '
+       assert_not @chef.valid?
+   end
+   
+   test 'password should be at least 5 characters' do
+       @chef.password = @chef.password_confirmation = 'x' * 4
+       assert_not @chef.valid?
+   end
 end

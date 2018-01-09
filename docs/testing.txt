@@ -3,3 +3,7 @@ $ rails test
 
 # run test in a given file only
 $ rails test test/integration/recipes_edit_test.rb
+
+# run only models tests
+$ rails test:models
+
