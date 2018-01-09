@@ -3,3 +3,6 @@ $ git push heroku master
 
 # do migrations on heroku
 $ heroku run rails db:migrate
+
+# run heroku console
+$ heroku run rails console
