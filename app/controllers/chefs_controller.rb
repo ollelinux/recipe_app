@@ -1,5 +1,5 @@
 class ChefsController < ApplicationController
-  before_action :set_chef, only: [:show]
+  before_action :set_chef, only: [:show, :edit, :update]
   
   def new
     @chef = Chef.new
