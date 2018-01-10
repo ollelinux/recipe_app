@@ -23,6 +23,12 @@ class ChefsController < ApplicationController
   end
 
   def update
+    if @chef.update(chef_params)
+      flash[:success] = 'Your accound has been updated successfully!'
+      redirect_to @chef # short form to show
+    else
+        render :edit
+    end
   end
   
   private 
