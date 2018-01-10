@@ -31,6 +31,10 @@ class ChefsController < ApplicationController
     end
   end
   
+  def index
+    @chefs = Chef.all
+  end
+  
   private 
     def set_chef
         @chef = Chef.find(params[:id])
